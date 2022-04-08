@@ -1,5 +1,6 @@
 <?php 
-
+    include_once __DIR__."/class.php";
+    $settimoSigillo = new Film("Il settimo Sigillo", "Ingmar Bergman", 1960);
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Film List</h1>
+    <ul>
+        <li>
+            <?php echo $settimoSigillo->getFullDescription();?>
+        </li>
+    </ul>
 </body>
 </html>
