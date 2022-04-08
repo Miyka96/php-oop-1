@@ -3,15 +3,17 @@ class Film{
     public $title;
     public $author;
     public $year;
+    public $img;
 
-    function __construct(string $_title, string $_author, int $_year)
+    function __construct(string $_title, string $_author, int $_year, string $_img)
     {
         $this->title=$_title;
         $this->author=$_author;
         $this->year=$_year;
+        $this->img=$_img;
     }
 
     public function getFullDescription(){
-        return $this->title.' '.$this->author.' '.$this->year;
+        return $this->title.' di '.$this->author.' /anno '.$this->year . ' <br> <img src='.$this->img.'>';
     }
 }
