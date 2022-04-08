@@ -14,6 +14,6 @@ class Film{
     }
 
     public function getFullDescription(){
-        return $this->title.' di '.$this->author.'<br>Anno '.$this->year . ' <br> <img src='.$this->img.'>';
+        return $this->title.' di '.$this->author.'<br>Anno '.$this->year . ' <br> <div class="img_wrapper"> <img src='.$this->img.'> </div>';
     }
 }
